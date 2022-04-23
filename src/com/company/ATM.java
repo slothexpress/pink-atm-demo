@@ -15,8 +15,15 @@ public class ATM {
     }
 
     public void withdrawMoney(Account account, int amount){
-        account.setBalance(account.getBalance() - amount);
-        System.out.println("\nSuccessful withdrawal: " + amount + " SEK.\n");
+        if(account.getBalance() < amount)
+        {
+            System.out.println("\nInsufficient amount available in your account.\n");
+        }
+        else
+        {
+            account.setBalance(account.getBalance() - amount);
+            System.out.println("\nSuccessful withdrawal: " + amount + " SEK.\n");
+        }
     }
 
 }
