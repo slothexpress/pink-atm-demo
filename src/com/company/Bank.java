@@ -22,12 +22,4 @@ public class Bank {
         }
         return null;
     }
-
-    public void setupMockBank() {
-        Account myAccount = new Account(1122, 1000);
-        Account yourAccount = new Account(3344, 5000);
-        allAccounts.add(myAccount);
-        allAccounts.add(yourAccount);
-    }
-
 }

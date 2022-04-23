@@ -7,7 +7,11 @@ public class Main {
     public static void main(String[] args) {
 
         Bank theBank = new Bank();
-        theBank.setupMockBank();
+        Account myAccount = new Account(1122, 1000);
+        Account yourAccount = new Account(3344, 5000);
+        theBank.addAccount(myAccount);
+        theBank.addAccount(yourAccount);
+        
         ATM awesomeATM = new ATM();
         boolean cardInMachine = true;
 
