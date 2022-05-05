@@ -11,7 +11,7 @@ public class Main {
         Account yourAccount = new Account(3344, 5000);
         theBank.addAccount(myAccount);
         theBank.addAccount(yourAccount);
-        
+
         ATM awesomeATM = new ATM();
         boolean cardInMachine = true;
 
@@ -20,12 +20,10 @@ public class Main {
         int accountNumber = scan.nextInt();
         Account account = theBank.getAccount(accountNumber);
 
-        while(cardInMachine)
-        {
+        while(cardInMachine) {
             awesomeATM.showMenu();
             int choice = scan.nextInt();
-            switch(choice)
-            {
+            switch(choice) {
                 case 1:
                     awesomeATM.checkBalance(account);
                     break;
@@ -45,5 +43,4 @@ public class Main {
             }
         }
     }
-
 }

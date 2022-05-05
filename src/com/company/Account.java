@@ -10,19 +10,15 @@ public class Account {
         this.balance = bal;
     }
 
-    public int getAccountNumber()
-    {
+    public int getAccountNumber() {
         return this.accountNumber;
     }
 
-    public int getBalance()
-    {
+    public int getBalance() {
         return this.balance;
     }
 
-    public void setBalance(int bal)
-    {
+    public void setBalance(int bal) {
         this.balance = bal;
     }
-
 }
